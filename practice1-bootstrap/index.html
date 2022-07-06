@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>P1 - Bói Tình Yêu</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <nav class="navbar navi-bar">
+            <div class="container-fluid">
+                <a href="#" class="navbar-brand">Bói Tình Iu <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                        height="16" fill="currentColor" class="bi bi-balloon-heart-fill" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M8.49 10.92C19.412 3.382 11.28-2.387 8 .986 4.719-2.387-3.413 3.382 7.51 10.92l-.234.468a.25.25 0 1 0 .448.224l.04-.08c.009.17.024.315.051.45.068.344.208.622.448 1.102l.013.028c.212.422.182.85.05 1.246-.135.402-.366.751-.534 1.003a.25.25 0 0 0 .416.278l.004-.007c.166-.248.431-.646.588-1.115.16-.479.212-1.051-.076-1.629-.258-.515-.365-.732-.419-1.004a2.376 2.376 0 0 1-.037-.289l.008.017a.25.25 0 1 0 .448-.224l-.235-.468ZM6.726 1.269c-1.167-.61-2.8-.142-3.454 1.135-.237.463-.36 1.08-.202 1.85.055.27.467.197.527-.071.285-1.256 1.177-2.462 2.989-2.528.234-.008.348-.278.14-.386Z" />
+                    </svg></a>
+            </div>
+        </nav>
+
+
+        <!-- content  -->
+        <div class="row pt-5">
+            <!-- Main content here -->
+            <div class="main-content col-md-8">
+                <h1>Bói Tình Yêu với Trần Duy Khánh <span class="badge rounded-pill text-bg-danger">HOT</span></h1>
+                <p id="result-teller">Chào bạn, đây là trang web để bói tình yêu với Trần Duy Khánh. Bạn vui lòng nhập
+                    thông tin để máy
+                    tính
+                    toán xem liệu hai bạn có hạnh phúc nếu yêu nhau không?</p>
+                <p>Bạn hãy điền tên, năm sinh và bấm nút "Tính toán" để máy tính toán nhé</p>
+
+                <!-- form  -->
+                <form>
+                    <div class="form-floating mb-3">
+
+                        <input type="text" class="form-control" id="floatingInput" placeholder="Tên là gì ta">
+                        <label for="floatingInput" class="form-label">Tên của bạng</label>
+                    </div>
+                    <div class="mb-3 form-floating">
+
+                        <input type="text" class="form-control" id="InputBYear" placeholder="Năm sinh là gì ta">
+                        <label for="InputBYear" class="form-label">Năm sinh của em</label>
+                    </div>
+                    <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1">Bạn đã có tình cảm với Khánh chưa?</label>
+                    </div>
+
+                    <button type="button" class="btn calc-button" onclick="newFunc()">Tính toán</button>
+                </form>
+
+
+
+                <!-- quote -->
+                <div class="d-flex justify-content-end">
+                    <figure class="mt-4 shadow p-3 mb-5 bg-gradient rounded quote-select">
+                        <blockquote class="blockquote">
+                            <p class="text-end">Tình yêu cần có cả lý trí và con tim. Nhưng có lẽ người ta đã bỏ quên
+                                mất sự tin tưởng và lòng
+                                chung thủy.</p>
+                        </blockquote>
+                        <figcaption class="blockquote-footer text-end">
+                            Duy Khanh Tran
+                        </figcaption>
+                    </figure>
+                </div>
+                <!-- end of quote -->
+
+            </div>
+            <!-- Sidebar here -->
+            <div class="col-md-4">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, voluptas totam distinctio
+                    eveniet sapiente maiores nulla molestiae accusamus. Qui quaerat atque quidem voluptatem quasi porro
+                    alias voluptatibus sit iure tempore.</p>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+        integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+        integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
+        crossorigin="anonymous"></script>
+    <script>
+        function newFunc() {
+            document.getElementById("result-teller").innerText = "Kết quả: Bạn với Khánh rất là hợp nhau, nên tiến đến hôn nhân.";
+        }
+    </script>
+</body>
+
+</html>

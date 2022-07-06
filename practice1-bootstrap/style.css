@@ -1,0 +1,19 @@
+/* pallete here 
+#85FFC7 - aqua
+#297373 - look like forest
+#FF8552 - coral
+#E6E6E6 - platinum
+#39393A - jet */
+
+.navi-bar {
+    background-color: #E6E6E6;
+}
+
+.quote-select {
+    background-color: #85FFC7;
+}
+
+.calc-button {
+    color: #E6E6E6;
+    background-color: #297373;
+}
