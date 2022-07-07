@@ -1,0 +1,30 @@
+/* Font: font-family: 'Nunito', sans-serif;
+    color palettes
+    - #90ADC6 blue gray
+    - #E9EAEC like silver
+    - #FAD02C yellow
+    - #333652 dark blue
+
+*/
+body {
+    background-color: #E9EAEC;
+    font-family: 'Nunito', sans-serif;
+}
+
+#mainNavbar {
+    font-size: 1.5rem;
+    font-weight: 100;
+}
+
+#mainNavbar .nav-link {
+    color: #90ADC6;
+}
+
+#mainNavbar .nav-link:hover {
+    color: #FAD02C;
+}
+
+#mainNavbar .navbar-brand {
+    color: #333652;
+    font-size: 1.5rem;
+}
