@@ -28,3 +28,17 @@ body {
     color: #333652;
     font-size: 1.5rem;
 }
+#headingGroup span {
+    color: #FAD02C;
+}
+#headingGroup h1 {
+    font-weight: 100;
+    font-size: 4rem;
+}
+
+@media (max-width: 1200px) {
+    #headingGroup h1 {
+        font-weight: 100;
+        font-size: 3rem;
+    }
+}
