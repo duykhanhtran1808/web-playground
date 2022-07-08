@@ -11,6 +11,18 @@ body {
     font-family: 'Nunito', sans-serif;
 }
 
+.bodyText h2 {
+    color: #333652;
+    font-weight: 100; 
+    font-size: 2.5rem;
+}
+
+.bodyText p {
+    font-weight: 100; 
+    font-size: 1.125rem;
+    line-height: 2;
+}
+
 #mainNavbar {
     font-size: 1.5rem;
     font-weight: 100;
@@ -21,7 +33,7 @@ body {
 }
 
 #mainNavbar .nav-link:hover {
-    color: #FAD02C;
+    font-weight: 400;
 }
 
 #mainNavbar .navbar-brand {
@@ -41,4 +53,19 @@ body {
         font-weight: 100;
         font-size: 3rem;
     }
+}
+
+@media (max-width: 1400px) {
+    .bodyText p {
+        font-weight: 100; 
+        font-size: 1rem;
+    }
+}
+.navbar {
+    transition: background 500ms;
+}
+
+.navbar.scrolled {
+    background-color: #FAD02C;
+    transition: background 500ms;
 }
